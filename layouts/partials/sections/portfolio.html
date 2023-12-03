@@ -8,8 +8,8 @@
         {{ end }}
       </div>
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
-        {{ with .pretitle }}
-          <p class="fs-1 text-danger fw-semibold mb-2">{{ . }}</p>
+        {{ with . }}
+          <p class="fs-1 text-danger fw-semibold mb-2" id="{{ .id }}">{{ .pretitle }}</p>
         {{ end }}
         {{ with .title }}
           <h3 class="fs-1 fw-bold text-primary pb-3">{{ . }}</h3>
