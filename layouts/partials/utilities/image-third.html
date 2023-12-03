@@ -1,3 +1,8 @@
 {{ with resources.Get . }}
-  <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ div .Width 3 }}" height="{{ div .Height 3 }}">
+  <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" width='
+  {{ if in .Title "university" }}
+   {{ 150 }}
+  {{ else }}
+    {{ 300 }}
+  {{ end }}' height="auto">
 {{ end }}

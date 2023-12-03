@@ -8,12 +8,11 @@
       {{ end }}
     </div>
     <div class="row align-items-center justify-content-center">
+      {{ range .content.items }}
       <div class="col px-3 my-2 text-center">
-        <img class="" src="images/university-logo.webp" alt="images/university-logo.webp" width="150" height="auto">
+        {{ partial "utilities/image-third.html" . }}
       </div>
-      <div class="col px-3 my-2 text-center">
-        <img class="" src="images/NPOD_logo.webp" alt="images/NPOD_logo.webp" width="450" height="auto">
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
